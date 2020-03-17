@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo p {
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.graficlogo {
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav {
+    margin: auto;
+    width: 800px;
+    height: 50px;
+}
+
+.topnav {
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.topnav a {
+    color: #000;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #000;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.mw-100 {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.advantages__container {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.advantages__items {
+    width: 30%;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+footer a {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer p {
+    color: white;
+}
+
+footer nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.social img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.social img:hover {
+    background: #494949;
+    border-radius: 50%;
+}
+
+.gallery {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.photo-itm{
+    width: 26%;
+    padding: 5px;
+}
+.photo-itm img{
+    box-sizing: border-box;
+    max-width: 100%
+}
+
+.photo-itm img:hover{
+    transition: 1s;
+    transform: scale(1.2)
+}
+
+.about_company {
+    padding-top: 25px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.complex {
+    width: 70%;
+    color: white;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.complex-itm {
+    padding: 51px 17px 51px 17px;
+    font-size: 100%;
+    margin-left: 50px;
+    margin-bottom: 45px;
+    width: 40%;
+    background-color: rgb(118, 205, 216);
+}
+
+.form{
+    width: 50%;
+    margin: 50px auto;
+}
+.feedback-input{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #fff;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #000;
+}
+
+.textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+.button-submit{
+    float: left;
+    width: 100%;
+    border: 0px solid transparent;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 300;
+}
+.button-submit:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.easy{
+    width: 0;
+    height: 74px;
+    background-color: #fbfbfb;
+    transition: .3s easy;
+}
+.services{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.services__container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 100px;
+}
+.discription__location {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: black;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .advantages__items {
+        width: 45%;
+    }
+
+    .photo-itm{
+        width: 45%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages__items {
+        width: 100%;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery{
+        width: auto;
+        margin: auto;
+    }
+    .photo-itm{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .services__container{
+        grid-template-columns: auto;
+    }
+
+}
